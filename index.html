@@ -11,11 +11,37 @@
         <div class="urlap">
             <form action="">
                 <hr>
-                <label for="erkezes">Érkezés dátuma:</label>
-                <input type="date" id="erkezes" name="erkezes">
-                <br>
-                <label for="tavozas">Távozás dátuma:</label>
-                <input type="date" id="tavozas" name="tavozas">
+                <div class="sor">
+                    <label for="erkezes" >Érkezés dátuma:</label>
+                    <input type="date" id="erkezes" name="erkezes" class="mezo">
+                </div>
+                <div class="sor">
+                    <label for="tavozas">Távozás dátuma:</label>
+                    <input type="date" id="tavozas" name="tavozas" class="mezo">
+                </div>
+                <hr>
+                <div class="sor">
+                    <label for="tipus" id="center">Szoba típusa:</label>
+                    <div class="gombok">
+                        <div>
+                            <input type="radio" name="tipus" id="">
+                            <label for="tipus">Egyágyas - 9.000 Ft/éj</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="tipus" id="">
+                            <label for="tipus">Kétágyas - 15.000 Ft/éj</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="tipus" id="">
+                            <label for="tipus">Kétágyas 1 pótággyal - 18.000 Ft/éj</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="tipus" id="">
+                            <label for="tipus">Kétágyas 2 pótággyal - 21.000 Ft/éj</label>
+                        </div>
+                    </div>
+                    
+                </div>
             </form>
         </div>
         <button onclick=Kalkulal()>Költségkalkuláció</button>
