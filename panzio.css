@@ -25,7 +25,6 @@ form{
 }
 .sor{
     display: flex;
-    justify-content: ;
     flex-direction: row;
     margin-bottom: 10px;
 }
@@ -44,4 +43,13 @@ label{
 #center{
     margin-top: auto;
     margin-bottom: auto;
+}
+#vendegszan{
+    padding-right: 0px;
+    margin-right: 0px;
+    width: 40px;
+    margin-left: 0px;
+}
+#ev{
+    width: 30px;
 }
