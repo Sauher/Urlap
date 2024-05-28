@@ -50,15 +50,53 @@ label{
     width: 40px;
     margin-left: 0px;
 }
-#ev1{
-    width: 30px;
+.evek{
+    width: 20px;
 }
-#ev2{
-    width: 30px;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-#ev3{
-    width: 30px;
+@media only screen and (max-width: 870px) {
+    h1{
+        font-size: 30px;
+    }
+    form{
+        font-size: 12px;
+    }
+    .evek{
+        font-size: 12px;
+        width: 10px;
+        margin: 5px;
+    }
+    .mezo{
+        height: 10px;
+        font-size: 12px;
+    }
 }
-#ev4{
-    width: 30px;
+@media only screen and (max-width: 740px) {
+    .sor{
+        flex-direction: column;
+    }
+    .mezo{
+        margin: 0;
+    }
+    label{
+        float: right;
+    }
+    .evek{
+        float: left;
+    }
+    .evdiv{
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 530px) {
+    h1{
+        font-size: 20px;
+    }
+    form{
+        font-size: 10px;
+    }
 }
