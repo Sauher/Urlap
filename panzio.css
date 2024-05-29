@@ -91,6 +91,12 @@ input::-webkit-inner-spin-button {
     .evdiv{
         width: 30%;
     }
+    #erkezes{
+        font-size: 8px;
+    }
+    #tavozas{
+        font-size: 8px;
+    }
 }
 @media only screen and (max-width: 530px) {
     h1{
