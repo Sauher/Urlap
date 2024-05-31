@@ -84,6 +84,7 @@ input::-webkit-inner-spin-button {
     }
     label{
         float: right;
+        text-align: left;
     }
     .evek{
         float: left;
@@ -101,6 +102,10 @@ input::-webkit-inner-spin-button {
 @media only screen and (max-width: 530px) {
     h1{
         font-size: 20px;
+    }
+    label{
+        float: right;
+        text-align: left;
     }
     form{
         font-size: 10px;
