@@ -8,6 +8,7 @@ function Valtozas(){
         document.getElementById("ev2").disabled = true
         document.getElementById("ev3").disabled = true
         document.getElementById("ev4").disabled = true
+        
     }
     else if(vendegszam == 2){
         document.getElementById("ev2").disabled = false
