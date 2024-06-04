@@ -29,6 +29,9 @@ function Valtozas(){
         document.getElementById("kmedence").disabled = true
         document.getElementById("bmedence").disabled = true 
         document.getElementById("szauna").disabled = true
+        document.getElementById("kmedence").checked = false
+        document.getElementById("bmedence").checked = false
+        document.getElementById("szauna").checked = false
     }
     else{
         document.getElementById("kmedence").disabled = false
