@@ -8,7 +8,7 @@ function Valtozas(){
         document.getElementById("ev2").disabled = true
         document.getElementById("ev3").disabled = true
         document.getElementById("ev4").disabled = true
-        
+
     }
     else if(vendegszam == 2){
         document.getElementById("ev2").disabled = false
@@ -37,6 +37,7 @@ function Valtozas(){
     }
 }
 function Kalkulal(){
+    
     let vendegszam = document.getElementById("vendegszan").value
     let erk = new Date(document.getElementById("erkezes").value)
     let erkev = erk.getFullYear().toString()
@@ -51,9 +52,11 @@ function Kalkulal(){
     let osszeg = 0
     let ellatas 
     let szolgaltatas = " "
-
-
-    if(document.getElementById("egyagy").checked == true)
+    if(erk > tav || idotartam == 0){
+        alert("Szerintem gyere a múltban vagy menj el mikor megjössz")
+    }
+    else{
+        if(document.getElementById("egyagy").checked == true)
     {
         szobatipus = document.getElementById("egyagy").value
         osszeg+= 9000*idotartam
@@ -111,4 +114,7 @@ function Kalkulal(){
     }
 
     alert("Kedves vendégünk!\n\nTájékoztatjuk sikeres folgalásáról.\n\nÉrkezés: "+erkev+"-"+erkhonap+"-"+erknap+"\n\nTávozás: "+tavev+"-"+tavhonap+"-"+tavnap+"\n\nSzoba típusa: "+szobatipus+"\n\nVendégek száma: "+vendegszam+"\n\nEllátás: "+ellatas+"\n\nIgénylet szolgáltatások: "+szolgaltatas+"\n\nA teljes össeg: "+osszeg)
+    }
+
+    
 }
